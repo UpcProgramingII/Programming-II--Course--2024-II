@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="857.0" prefWidth="1212.0" style="-fx-background-color: #e1e1e3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.unicesar.ejemplofx.PrincipalController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="857.0" prefWidth="480.0" spacing="3.0" style="-fx-background-color: #ffffff;" HBox.hgrow="NEVER">
+         <children>
+            <StackPane prefHeight="318.0" prefWidth="428.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="270.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../imagenes/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </StackPane>
+            <Button mnemonicParsing="false" onMouseMoved="#eventoMouseCliente" prefHeight="83.0" prefWidth="477.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Clientes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="83.0" prefWidth="490.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Cuentas" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="83.0" prefWidth="482.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Operaciones" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+      <StackPane fx:id="panel" prefHeight="857.0" prefWidth="733.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>
