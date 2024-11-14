@@ -29,7 +29,7 @@
                   <Insets bottom="50.0" />
                </padding>
             </StackPane>
-            <Button mnemonicParsing="false" onMouseMoved="#eventoMouseCliente" prefHeight="83.0" prefWidth="477.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Clientes" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#clcikBtnClientes" prefHeight="83.0" prefWidth="477.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Clientes" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
@@ -37,7 +37,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="83.0" prefWidth="490.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Cuentas" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#clickBtnCuentas" prefHeight="83.0" prefWidth="490.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Cuentas" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>

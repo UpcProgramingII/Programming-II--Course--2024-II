@@ -11,6 +11,8 @@ import java.io.IOException;
 /**
  * JavaFX App
  */
+
+//https://github.com/UpcProgramingII/Programming-II--Course--2024-II
 public class App extends Application {
 
     private static Scene scene;

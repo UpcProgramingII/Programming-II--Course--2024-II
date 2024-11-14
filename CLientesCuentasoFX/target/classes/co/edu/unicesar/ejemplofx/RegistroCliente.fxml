@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="712.0" prefWidth="1097.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="712.0" prefWidth="1097.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.unicesar.ejemplofx.RegistroClienteController">
    <children>
       <VBox prefHeight="200.0" prefWidth="1084.0">
          <children>
@@ -63,7 +62,7 @@
                               <Font size="25.0" />
                            </font>
                         </Label>
-                        <ComboBox prefHeight="55.0" prefWidth="537.0" />
+                        <ComboBox fx:id="cmbTipoCliente" prefHeight="55.0" prefWidth="537.0" />
                      </children>
                      <HBox.margin>
                         <Insets right="50.0" />

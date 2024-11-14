@@ -33,7 +33,7 @@
                         <Font name="System Bold" size="36.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="64.0" prefWidth="493.0" promptText="Username">
+                  <TextField fx:id="txtUsername" prefHeight="64.0" prefWidth="493.0" promptText="Username">
                      <font>
                         <Font size="28.0" />
                      </font>
@@ -41,12 +41,12 @@
                         <Insets top="40.0" />
                      </VBox.margin>
                   </TextField>
-                  <PasswordField prefHeight="64.0" prefWidth="493.0" promptText="Password">
+                  <PasswordField fx:id="txtPassword" prefHeight="64.0" prefWidth="493.0" promptText="Password">
                      <font>
                         <Font size="28.0" />
                      </font>
                   </PasswordField>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="493.0" text="Login">
+                  <Button mnemonicParsing="false" onAction="#clickBtnLogin" prefHeight="50.0" prefWidth="493.0" text="Login">
                      <font>
                         <Font size="28.0" />
                      </font>
