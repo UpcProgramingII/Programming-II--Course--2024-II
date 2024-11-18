@@ -53,11 +53,22 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Button fx:id="btnListaCliente" mnemonicParsing="false" onAction="#clickBtnListaCliente" prefHeight="83.0" prefWidth="482.0" style="-fx-background-color: #1f15ee; -fx-border-color: #0d06a3; -fx-border-width: 5;" text="Listado clientes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
          <padding>
             <Insets left="30.0" right="30.0" />
          </padding>
       </VBox>
-      <StackPane fx:id="panel" prefHeight="857.0" prefWidth="733.0" HBox.hgrow="ALWAYS" />
+      <StackPane fx:id="panel" prefHeight="857.0" prefWidth="733.0" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets left="20.0" right="20.0" top="40.0" />
+         </padding></StackPane>
    </children>
 </HBox>

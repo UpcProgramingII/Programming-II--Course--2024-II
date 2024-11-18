@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 
@@ -30,22 +31,33 @@ public class PrincipalController implements Initializable {
     @FXML
     private void clcikBtnClientes() throws IOException{
         
-        this.panel.getChildren().clear();
-        StackPane panelClientes = new StackPane(App.loadFXML("RegistroCliente"));
-        this.panel.getChildren().add(panelClientes);
+        this.cargarPanel("RegistroCliente");
+        
         
     }
     
     @FXML
     private void clickBtnCuentas() throws IOException{
-        this.panel.getChildren().clear();
-        AnchorPane panelCuentas = new AnchorPane(App.loadFXML("RegistroCuentas"));
-        this.panel.getChildren().add(panelCuentas);
+        this.cargarPanel("RegistroCuentas");
+        
+    }
+    
+    @FXML
+    private void clickBtnListaCliente() throws IOException{
+        this.cargarPanel("ListaCliente");
+        
+        
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }  
+    
+    private void cargarPanel(String fxmlName) throws IOException{
+        this.panel.getChildren().clear();
+        AnchorPane panelCuentas = new AnchorPane(App.loadFXML(fxmlName));
+        this.panel.getChildren().add(panelCuentas);
+    }
     
 }

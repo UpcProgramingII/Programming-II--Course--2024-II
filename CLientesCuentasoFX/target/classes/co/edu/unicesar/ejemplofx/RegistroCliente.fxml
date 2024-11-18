@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="712.0" prefWidth="1097.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.unicesar.ejemplofx.RegistroClienteController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="617.0" prefWidth="1391.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.unicesar.ejemplofx.RegistroClienteController">
    <children>
-      <VBox prefHeight="200.0" prefWidth="1084.0">
+      <VBox alignment="CENTER" prefHeight="625.0" prefWidth="1355.0">
          <children>
-            <Label alignment="CENTER" prefHeight="73.0" prefWidth="1052.0" style="-fx-background-color: #a6a6a9;" text="Registro de Clientes" VBox.vgrow="ALWAYS">
+            <Label alignment="CENTER" prefHeight="88.0" prefWidth="1421.0" style="-fx-background-color: #a6a6a9;" text="Registro de Clientes" VBox.vgrow="ALWAYS">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label prefHeight="45.0" prefWidth="1050.0" text="Id Cliente:">
+            <Label prefHeight="45.0" prefWidth="1469.0" text="Id Cliente:">
                <font>
                   <Font size="25.0" />
                </font>
@@ -28,34 +28,34 @@
                   <Insets top="30.0" />
                </VBox.margin>
             </Label>
-            <TextField prefHeight="55.0" prefWidth="1037.0">
+            <TextField fx:id="txtId" prefHeight="55.0" prefWidth="1037.0">
                <font>
                   <Font size="25.0" />
                </font>
             </TextField>
-            <Label prefHeight="45.0" prefWidth="1050.0" text="Nombres:">
+            <Label prefHeight="45.0" prefWidth="1472.0" text="Nombres:">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <TextField prefHeight="55.0" prefWidth="1037.0">
+            <TextField fx:id="txtNombre" prefHeight="55.0" prefWidth="1037.0">
                <font>
                   <Font size="25.0" />
                </font>
             </TextField>
-            <Label prefHeight="45.0" prefWidth="1050.0" text="Apellidos:">
+            <Label prefHeight="45.0" prefWidth="1515.0" text="Apellidos:">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <TextField prefHeight="55.0" prefWidth="1037.0">
+            <TextField fx:id="txtApellido" prefHeight="55.0" prefWidth="1037.0">
                <font>
                   <Font size="25.0" />
                </font>
             </TextField>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="109.0" prefWidth="1355.0">
                <children>
-                  <VBox prefHeight="100.0" prefWidth="587.0">
+                  <VBox prefHeight="100.0" prefWidth="397.0">
                      <children>
                         <Label prefHeight="45.0" prefWidth="1050.0" text="Tipo Cliente:">
                            <font>
@@ -68,26 +68,26 @@
                         <Insets right="50.0" />
                      </HBox.margin>
                   </VBox>
-                  <VBox prefHeight="100.0" prefWidth="570.0">
+                  <VBox prefHeight="100.0" prefWidth="394.0">
                      <children>
                         <Label prefHeight="45.0" prefWidth="1050.0" text="No Max Transacciones:">
                            <font>
                               <Font size="25.0" />
                            </font>
                         </Label>
-                        <Spinner prefHeight="55.0" prefWidth="512.0" />
+                        <Spinner fx:id="txtTransacciones" prefHeight="55.0" prefWidth="472.0" />
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="BOTTOM_RIGHT" prefHeight="130.0" prefWidth="1037.0" spacing="20.0">
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="94.0" prefWidth="1355.0" spacing="20.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="345.0" text="Guardar">
+                  <Button mnemonicParsing="false" onAction="#btnClickGuardar" prefHeight="55.0" prefWidth="345.0" text="Guardar">
                      <font>
                         <Font name="System Bold" size="25.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="345.0" text="Guardar">
+                  <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="345.0" text="Cancelar">
                      <font>
                         <Font name="System Bold" size="25.0" />
                      </font>
@@ -97,7 +97,4 @@
          </children>
       </VBox>
    </children>
-   <padding>
-      <Insets bottom="30.0" left="30.0" right="30.0" top="50.0" />
-   </padding>
 </StackPane>

@@ -1,5 +1,7 @@
 package co.edu.unicesar.ejemplofx;
 
+import co.edu.unicesar.ejemplofx.logica.LogicaCliente;
+import co.edu.unicesar.ejemplofx.persistencia.MapaCliente;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,6 +18,7 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    protected static LogicaCliente logicaCliente = new LogicaCliente();
 
     @Override
     public void start(Stage stage) throws IOException {
