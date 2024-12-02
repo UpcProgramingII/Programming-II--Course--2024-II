@@ -4,13 +4,14 @@
  */
 package co.edu.unicesar.ejemplofx.modelo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  *
  * @author Jairo F
  */
-public class Movimiento {
+public class Movimiento implements Serializable {
     private LocalDate fecha;
     private double saldoInicial;
     private double monto;

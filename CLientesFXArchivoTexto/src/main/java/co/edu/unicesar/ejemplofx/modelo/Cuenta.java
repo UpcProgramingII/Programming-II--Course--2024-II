@@ -4,6 +4,7 @@
  */
 package co.edu.unicesar.ejemplofx.modelo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author Jairo F
  */
-public class Cuenta {
+public class Cuenta implements Serializable {
 
     private String id;
     private double saldo;

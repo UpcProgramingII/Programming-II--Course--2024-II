@@ -5,6 +5,7 @@
 package co.edu.unicesar.ejemplofx.modelo;
 
 import co.edu.unicesar.ejemplofx.excepciones.EstadoDeCuentaIncorrectoException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author Jairo F
  */
-public abstract class Cliente {
+public abstract class Cliente implements Serializable {
 
     private String nombre;
     private String apellido;

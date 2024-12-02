@@ -5,6 +5,7 @@
 package co.edu.unicesar.ejemplofx.logica;
 
 import co.edu.unicesar.ejemplofx.modelo.*;
+import co.edu.unicesar.ejemplofx.persistencia.ArchivoObjetoCliente;
 import co.edu.unicesar.ejemplofx.persistencia.ArchivoTextoCliente;
 import co.edu.unicesar.ejemplofx.persistencia.IArchivoCliente;
 import co.edu.unicesar.ejemplofx.persistencia.MapaCliente;
@@ -22,6 +23,7 @@ public class LogicaCliente {
     public LogicaCliente() {
         //this.clientes = new MapaCliente();
         this.clientes = new ArchivoTextoCliente();
+        //this.clientes= new ArchivoObjetoCliente();
     }
     
     public void addCliente(Cliente cliente){

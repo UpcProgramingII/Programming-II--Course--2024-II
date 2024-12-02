@@ -7,12 +7,13 @@ package co.edu.unicesar.ejemplofx.persistencia;
 import java.util.ArrayList;
 import java.util.List;
 import co.edu.unicesar.ejemplofx.modelo.Cliente;
+import java.io.Serializable;
 
 /**
  *
  * @author Jairo F
  */
-public class ListaCliente implements IArchivoCliente {
+public class ListaCliente implements IArchivoCliente, Serializable {
     
     private List<Cliente> lista;
 

@@ -3,5 +3,6 @@ co\edu\unicesar\ejemplofx\RegistroCuentasController.class
 co\edu\unicesar\ejemplofx\App.class
 co\edu\unicesar\ejemplofx\modelo\Usuario.class
 co\edu\unicesar\ejemplofx\persistencia\UsersCollections.class
+co\edu\unicesar\ejemplofx\persistencia\ArchivoObjetoCliente.class
 co\edu\unicesar\ejemplofx\PrimaryController.class
 co\edu\unicesar\ejemplofx\SecondaryController.class
